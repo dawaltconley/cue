@@ -1,6 +1,6 @@
 {
   "name": "@dawaltconley/cue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Promise-based prompts for user input.",
   "main": "cue.js",
   "scripts": {
