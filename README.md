@@ -6,7 +6,7 @@ This module contains several convenience methods for interacting with the user v
 
 Each method returns a Promise that resolves to the user's input. The `prompt` and `whisper` methods are identical, except that the latter hides the user's input by converting each character to asterisks (for passwords and such). The `yn` method prompts the user for a binary choice and then resolves to a boolean.
 
-```node
+```javascript
 const { prompt, whisper, yn } = require('@dawaltconley/cue')
 
 const getLogin = async () => {
@@ -21,7 +21,7 @@ const getLogin = async () => {
 
 The `prompt` and `whisper` methods can also take an object or array of prompts as their argument, which will run in the order provided and return an object or array of answers.
 
-```node
+```javascript
 const getInfo = () => prompt([
     'Name:',
     'Age:',
